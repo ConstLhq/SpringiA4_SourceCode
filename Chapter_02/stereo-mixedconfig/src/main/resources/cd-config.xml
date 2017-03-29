@@ -3,21 +3,22 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:c="http://www.springframework.org/schema/c"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-  <bean id="compactDisc"
+  <bean id="di" class="soundsystem.Di"></bean>
+  <bean id="blankDisc"
         class="soundsystem.BlankDisc"
-        c:_0="Sgt. Pepper's Lonely Hearts Club Band"
-        c:_1="The Beatles">
+        c:_0="《自传》"
+        c:_1="五月天">
     <constructor-arg>
       <list>
-        <value>Sgt. Pepper's Lonely Hearts Club Band</value>
-        <value>With a Little Help from My Friends</value>
-        <value>Lucy in the Sky with Diamonds</value>
-        <value>Getting Better</value>
-        <value>Fixing a Hole</value>
+        <value>如果我们不曾相遇</value>
+        <value>好好</value>
+        <value>后来的我们</value>
+        <value>任意门</value>
+        <value>顽固</value>
         <!-- ...other tracks omitted for brevity... -->
       </list>
     </constructor-arg>
+    <property name="di" ref="di"/>
   </bean>
 
 </beans>

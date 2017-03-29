@@ -1,12 +1,11 @@
 package soundsystem;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.*;
 
 @Configuration
-@Import(CDPlayerConfig.class)
+@ComponentScan
 @ImportResource("classpath:cd-config.xml")
+@EnableAspectJAutoProxy
 public class SoundSystemConfig {
 
 }

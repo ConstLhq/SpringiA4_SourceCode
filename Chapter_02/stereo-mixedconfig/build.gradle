@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     compile("org.springframework:spring-context:${springVersion}")
+    compile("org.aspectj:aspectjweaver:${aspectJVersion}")
 
     testCompile("org.springframework:spring-test:${springVersion}")
 	testCompile "com.github.stefanbirkner:system-rules:${systemRulesVersion}"

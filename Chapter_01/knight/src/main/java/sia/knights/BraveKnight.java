@@ -14,6 +14,11 @@ public class BraveKnight implements Knight {
 
   public void embarkOnQuest() {
     quest.embark();
+    test();
+  }
+
+  public void test(){
+   System.out.println("test execution!");
   }
 
 }
